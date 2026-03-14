@@ -1,0 +1,62 @@
+{
+  "name": "audit-chain",
+  "version": "0.1.0",
+  "description": "Lightweight tamper-evident audit log with HMAC-SHA256 hash chain. Zero dependencies. Framework-agnostic.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js"
+    },
+    "./store/memory": {
+      "types": "./src/store/memory.d.ts",
+      "import": "./src/store/memory.js"
+    }
+  },
+  "files": [
+    "src/**/*.js",
+    "src/**/*.d.ts",
+    "SECURITY.md",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test tests/test_*.js",
+    "test:coverage": "node --test --experimental-test-coverage tests/test_*.js",
+    "prepublishOnly": "node --test tests/test_*.js"
+  },
+  "keywords": [
+    "audit-log",
+    "audit-trail",
+    "tamper-proof",
+    "tamper-evident",
+    "hash-chain",
+    "hmac",
+    "sha256",
+    "immutable-log",
+    "compliance",
+    "soc2",
+    "nis2",
+    "iso27001",
+    "gdpr",
+    "gobd",
+    "integrity",
+    "event-log",
+    "append-only"
+  ],
+  "author": "Lars Detmers <npm@detmers-publish.de>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/detmerspublish/audit-chain.git"
+  },
+  "homepage": "https://github.com/detmerspublish/audit-chain#readme",
+  "bugs": {
+    "url": "https://github.com/detmerspublish/audit-chain/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
