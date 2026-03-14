@@ -26,7 +26,7 @@ without cloud dependencies or heavy infrastructure.
 ## Quick Start
 
 ```js
-import { createAuditLog, InMemoryStore } from 'audit-chain';
+import { createAuditLog, InMemoryStore } from '@ldetmers/audit-chain';
 
 const store = new InMemoryStore();
 const log = createAuditLog({ store, secret: process.env.AUDIT_SECRET });
@@ -51,7 +51,7 @@ const users = await log.replay((state, event) => {
 ## Installation
 
 ```bash
-npm install audit-chain
+npm install @ldetmers/audit-chain
 ```
 
 ## API
@@ -121,7 +121,7 @@ Returns: `Promise<any>`
 ### InMemoryStore (included)
 
 ```js
-import { InMemoryStore } from 'audit-chain';
+import { InMemoryStore } from '@ldetmers/audit-chain';
 const store = new InMemoryStore();
 ```
 

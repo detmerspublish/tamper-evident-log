@@ -1,5 +1,5 @@
 {
-  "name": "audit-chain",
+  "name": "@ldetmers/audit-chain",
   "version": "0.1.0",
   "description": "Lightweight tamper-evident audit log with HMAC-SHA256 hash chain. Zero dependencies. Framework-agnostic.",
   "type": "module",
