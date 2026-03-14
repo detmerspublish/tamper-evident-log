@@ -26,7 +26,7 @@ without cloud dependencies or heavy infrastructure.
 ## Quick Start
 
 ```js
-import { createAuditLog, InMemoryStore } from '@ldetmers/audit-chain';
+import { createAuditLog, InMemoryStore } from 'tamper-evident-log';
 
 const store = new InMemoryStore();
 const log = createAuditLog({ store, secret: process.env.AUDIT_SECRET });
@@ -51,7 +51,7 @@ const users = await log.replay((state, event) => {
 ## Installation
 
 ```bash
-npm install @ldetmers/audit-chain
+npm install tamper-evident-log
 ```
 
 ## API
@@ -121,7 +121,7 @@ Returns: `Promise<any>`
 ### InMemoryStore (included)
 
 ```js
-import { InMemoryStore } from '@ldetmers/audit-chain';
+import { InMemoryStore } from 'tamper-evident-log';
 const store = new InMemoryStore();
 ```
 
