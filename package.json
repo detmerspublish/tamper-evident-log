@@ -1,6 +1,6 @@
 {
   "name": "tamper-evident-log",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Lightweight tamper-evident audit log with HMAC-SHA256 hash chain. Zero dependencies. Framework-agnostic.",
   "type": "module",
   "main": "./src/index.js",
@@ -50,11 +50,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/detmerspublish/audit-chain.git"
+    "url": "git+https://github.com/detmerspublish/tamper-evident-log.git"
   },
-  "homepage": "https://github.com/detmerspublish/audit-chain#readme",
+  "homepage": "https://github.com/detmerspublish/tamper-evident-log#readme",
   "bugs": {
-    "url": "https://github.com/detmerspublish/audit-chain/issues"
+    "url": "https://github.com/detmerspublish/tamper-evident-log/issues"
   },
   "engines": {
     "node": ">=18"
